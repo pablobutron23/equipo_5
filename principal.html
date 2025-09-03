@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desarrollador_1</title>
+    <style>
+      #Lista {
+        background-color: cadetblue;
+        width: 15rem;
+        border: 2px solid #000;
+        border-radius: 10px;
+        margin: auto;
+      }
+      .Equipo {
+        width: 10rem;
+        margin: auto;
+        padding-bottom: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <h2 class="Equipo">Equipo 5</h2>
+    <ul id="Lista"></ul>
+
+    <script>
+      const lista = [
+        "Josema Cedrik Cruz Ramos",
+        "Elvis Erik Huaynoca Condori",
+        "Paolo Carlos Cordero Rojas",
+        "Pablo Sandro Butron Garay",
+      ];
+      lista.forEach((nro) => {
+        const li = document.createElement("li");
+        li.textContent = `${nro}`;
+        Lista.appendChild(li);
+      });
+    </script>
+  </body>
+</html>
